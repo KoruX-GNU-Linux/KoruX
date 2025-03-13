@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+apt-get purge -y imagemagick*
+
+dpkg -l | awk '/^rc/{print $2}' | xargs apt-get purge -y
+apt-get autoremove -y
+apt-get autoclean
