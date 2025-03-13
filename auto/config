@@ -9,7 +9,6 @@ lb config noauto \
 	--cache-packages "false" \
 	--debian-installer "live" \
 	--distribution "bookworm" \
-	--debootstrap-options "--variant=standard" \
 	--debian-installer-distribution "bookworm" \
 	--mirror-binary "http://deb.debian.org/debian/" \
 	--mirror-bootstrap "http://deb.debian.org/debian/" \
