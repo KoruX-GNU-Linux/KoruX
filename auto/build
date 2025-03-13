@@ -5,6 +5,6 @@ set -e
 lb build noauto "${@}" 2>&1 | tee build.log
 
 for f in $(ls | grep 'rename-it' 2>/dev/null); do
-    ext=$(echo "$f" | sed 's/.*\.//')
-    mv "$f" "korux-live-0.01-amd64-xfce.$ext"
+	ext=$(echo "$f" | sed 's/.*\.//')
+	mv "$f" "korux-live-0.01-amd64-xfce.$ext"
 done
