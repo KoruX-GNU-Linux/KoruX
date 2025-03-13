@@ -1,3 +1,5 @@
-#!/bin/sh -e
+#!/bin/sh
+
+set -e
 
 chmod 755 /etc/rc.local
