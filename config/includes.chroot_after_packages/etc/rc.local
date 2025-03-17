@@ -11,6 +11,7 @@
 # By default this script does nothing.
 
 # Generate the SSH keys if non-existent
-[ -f /etc/ssh/ssh_host_dsa_key ] || dpkg-reconfigure openssh-server
+[ -f /etc/ssh/ssh_host_rsa_key ] || DEBIAN_FRONTEND=noninteractive \
+dpkg-reconfigure openssh-server
 
 exit 0
