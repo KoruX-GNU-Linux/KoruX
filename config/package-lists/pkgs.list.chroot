@@ -2,6 +2,16 @@
 live-task-xfce
 spice-vdagent
 
+# Bootloader
+grub-efi-amd64
+grub-efi-amd64-bin
+grub-efi-amd64-signed
+shim-helpers-amd64-signed
+shim-signed-common
+shim-unsigned
+shim-signed
+mokutil
+
 # Text Editors and Terminal Tools
 mc
 vim
