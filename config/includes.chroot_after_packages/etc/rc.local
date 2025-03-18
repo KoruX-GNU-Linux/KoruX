@@ -14,4 +14,8 @@
 [ -f /etc/ssh/ssh_host_rsa_key ] || DEBIAN_FRONTEND=noninteractive \
 dpkg-reconfigure openssh-server
 
+umask 077 # Add configuration for root Vifm too
+mkdir -p /root/.config/vifm &>/dev/null | true
+cp -v /etc/skel/.config/vifm/vifmrc /root/.config/vifm/vifmrc
+
 exit 0
