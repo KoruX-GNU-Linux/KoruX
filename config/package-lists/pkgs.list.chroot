@@ -126,6 +126,7 @@ autoconf
 automake
 valgrind
 eatmydata
+shellcheck
 pkg-config
 pristine-tar
 autotools-dev
