@@ -14,6 +14,11 @@
 [ -f /etc/ssh/ssh_host_rsa_key ] || DEBIAN_FRONTEND=noninteractive \
 dpkg-reconfigure openssh-server
 
+# Enable anonymous package statistics collection
+if grep 'PARTICIPATE="no"' /etc/popularity-contest.conf &>/dev/null; then
+  sed -i 's/PARTICIPATE="no"/PARTICIPATE="yes"/' /etc/popularity-contest.conf
+fi
+
 umask 077 # Add configuration for root Vifm too
 mkdir -p /root/.config/vifm &>/dev/null | true
 cp /etc/skel/.config/vifm/vifmrc /root/.config/vifm
