@@ -22,6 +22,7 @@ unclutter
 unclutter-startup
 
 # Debian Maintenance
+dput
 cdbs
 blhc
 duck
@@ -42,6 +43,7 @@ licensecheck
 debconf-utils
 how-can-i-help
 git-buildpackage
+popularity-contest
 
 # Git
 tig
