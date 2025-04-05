@@ -54,6 +54,7 @@ font-manager
 fonts-glasstty
 fonts-ibm-plex
 fonts-hack
+fonts-unifont
 xfonts-terminus
 
 # Virtualization
