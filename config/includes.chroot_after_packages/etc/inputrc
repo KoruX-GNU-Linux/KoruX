@@ -70,5 +70,6 @@ $endif
 
 $endif
 
+# enable Zsh-like tab completion with menu selection
 set show-all-if-ambiguous on
 TAB:menu-complete
