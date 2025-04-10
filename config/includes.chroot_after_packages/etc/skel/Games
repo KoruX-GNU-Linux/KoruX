@@ -9,22 +9,22 @@
 # Thanks to the fallows from Debian Games Team
 # <pkg-games-devel@lists.alioth.debian.org> for their work.
 #
-supertux          # https://blends.debian.org/games/tasks/platform
-supertuxkart      # https://blends.debian.org/games/tasks/racing
-extremetuxracer   # https://blends.debian.org/games/tasks/finest
-supertransball2   # https://blends.debian.org/games/tasks/arcade
-frozen-bubble     # https://blends.debian.org/games/tasks/finest
-chromium-bsu      # https://blends.debian.org/games/tasks/shootemup
-openarena         # https://blends.debian.org/games/tasks/fps
-neverball         # https://blends.debian.org/games/tasks/arcade
-neverputt         # https://blends.debian.org/games/tasks/sport
-teeworlds         # https://blends.debian.org/games/tasks/fps
-typespeed         # https://blends.debian.org/games/tasks/typing
-gnujump           # https://blends.debian.org/games/tasks/platform
-pacman            # https://blends.debian.org/games/tasks/arcade
-flare             # https://blends.debian.org/games/tasks/rpg
-tint              # https://blends.debian.org/games/tasks/tetris
-ninvaders         # https://blends.debian.org/games/tasks/console
-open-invaders     # https://blends.debian.org/games/tasks/arcade
-torus-trooper     # https://blends.debian.org/games/tasks/shootemup
-lbreakout2        # https://blends.debian.org/games/tasks/arcade
+supertux           # https://blends.debian.org/games/tasks/platform
+supertuxkart       # https://blends.debian.org/games/tasks/racing
+extremetuxracer    # https://blends.debian.org/games/tasks/finest
+supertransball2    # https://blends.debian.org/games/tasks/arcade
+frozen-bubble      # https://blends.debian.org/games/tasks/finest
+chromium-bsu       # https://blends.debian.org/games/tasks/shootemup
+openarena          # https://blends.debian.org/games/tasks/fps
+neverball          # https://blends.debian.org/games/tasks/arcade
+neverputt          # https://blends.debian.org/games/tasks/sport
+teeworlds          # https://blends.debian.org/games/tasks/fps
+typespeed          # https://blends.debian.org/games/tasks/typing
+gnujump            # https://blends.debian.org/games/tasks/platform
+pacman             # https://blends.debian.org/games/tasks/arcade
+flare              # https://blends.debian.org/games/tasks/rpg
+tint               # https://blends.debian.org/games/tasks/tetris
+ninvaders          # https://blends.debian.org/games/tasks/console
+open-invaders      # https://blends.debian.org/games/tasks/arcade
+torus-trooper      # https://blends.debian.org/games/tasks/shootemup
+lbreakout2         # https://blends.debian.org/games/tasks/arcade
