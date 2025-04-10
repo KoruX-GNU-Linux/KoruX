@@ -4,8 +4,11 @@
 * Структура проекта
 * Как собирают образа в Debian
 
+Документация:
+https://live-team.pages.debian.net/live-manual/html/live-manual/index.en.html
 
---- live-build (lb)
+
+--- live-build (lb) общая теория
 `live-build` — это инструмент, используемый для создания Live-образов в Debian.
 
 Live-образ — это версия операционной системы, которая загружается прямо с
@@ -27,25 +30,28 @@ Live-образ — это версия операционной системы,
 
 
 --- live-build (lb) конфигурация
-$ /usr/bin/lb config -d bookworm --debian-installer live \
-  --debian-installer-distribution bookworm \
-  --archive-areas "main contrib non-free non-free-firmware" \
-  --debootstrap-options "--variant=minbase"
+$ /usr/bin/lb config \
+	--distribution bookworm \
+	--debian-installer live \
+	--debian-installer-distribution bookworm \
+	--archive-areas "main contrib non-free non-free-firmware" \
+	--debootstrap-options "--variant=minbase"
 
 Эта команда настраивает окружение для создания живого образа (live image) Debian
 с помощью инструмента `live-build`. Краткий разбор:
 
-`-d bookworm`: Указывает, что целью является версия Debian с кодовым именем bookworm.
+--distribution bookworm: Указывает, что целью является версия Debian с кодовым
+именем bookworm.
 
-`--debian-installer live`: Включает установщик Debian в живой образ.
+--debian-installer live: Включает установщик Debian в живой образ.
 
-`--debian-installer-distribution bookworm`: Указывает, что установщик должен
+--debian-installer-distribution bookworm: Указывает, что установщик должен
 использовать дистрибуцию bookworm.
 
-`--archive-areas "main non-free-firmware"`: Определяет, какие архивные секции
+--archive-areas "main non-free-firmware": Определяет, какие архивные секции
 пакетов будут включены (основные и несвободные прошивки) в `/etc/apt/sources.list`.
 
-`--debootstrap-options "--variant=minbase"`: Использует debootstrap для создания
+--debootstrap-options "--variant=minbase": Использует debootstrap для создания
 минимальной базовой системы.
 
 
@@ -142,7 +148,7 @@ chroot-среде. Это значит, что они влияют на сист
 Например, образ `debian-live-12.9.0-amd64-xfce.iso` с
 https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
 
-Видно, что автор сборки использует сценарий `rebuild.sh` в
+Видно, что автор сборки использует сценарий `rebuild.sh` с
 https://salsa.debian.org/live-team/live-build
 
 $ git clone https://salsa.debian.org/live-team/live-build
