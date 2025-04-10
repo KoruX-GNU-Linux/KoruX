@@ -12,6 +12,9 @@
 
 case "$1" in
 	stop)
+		# You can edit this list and add your own files for cleanup to
+		# start with a clean session next time
+
 		files=(
 			".bash_history"
 			".gdb_history"
@@ -32,11 +35,15 @@ case "$1" in
 				done
 		done
 
+		# Secure the .ssh directory and its contents by setting
+		# appropriate permissions
+
 		if [ -d "$main_user/.ssh" ]; then
 			chmod 700 "$main_user/.ssh"
 			chmod 600 "$main_user/.ssh/"* 2>/dev/null
 		fi
 
+		# Clean up the local package cache to free up disk space
 		apt-get clean
 
 		exit 0
