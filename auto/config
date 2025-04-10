@@ -14,8 +14,8 @@ lb config noauto \
 	--mirror-bootstrap "http://deb.debian.org/debian/" \
 	--archive-areas "main contrib non-free non-free-firmware" \
 	--image-name "rename-it" \
-	--iso-application "Korux" \
-	--iso-publisher "Korux GNU/Linux" \
+	--iso-application "KoruX" \
+	--iso-publisher "KoruX GNU/Linux" \
 	--iso-volume "k-live 0.01 xf amd64" \
 	"${@}"
 
