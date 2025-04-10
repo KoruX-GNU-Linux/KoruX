@@ -5,11 +5,11 @@
 
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
-GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo KoruX`
 GRUB_CMDLINE_LINUX_DEFAULT="quiet"
 
 # Print the current default color values for TTY using the command:
-# cat /sys/module/vt/parameters/default_{red,grn,blu} > custom.conf
+# $ cat /sys/module/vt/parameters/default_{red,grn,blu} > custom.conf
 # Modify these values as needed and use them in the GRUB_CMDLINE_LINUX
 # to set custom TTY colors at boot, also you can use `setvtrgb`:
 # $ setvtrgb custom.conf

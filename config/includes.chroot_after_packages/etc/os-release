@@ -1,0 +1,10 @@
+PRETTY_NAME="KoruX GNU/Linux 0.01 (alpha)"
+NAME="KoruX GNU/Linux"
+VERSION="0.01 (alpha)"
+VERSION_CODENAME=alpha
+VERSION_ID="0.01"
+ID=korux
+ID_LIKE=debian
+HOME_URL=""
+SUPPORT_URL=""
+BUG_REPORT_URL=""
