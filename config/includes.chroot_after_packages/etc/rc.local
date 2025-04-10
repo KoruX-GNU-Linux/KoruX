@@ -19,8 +19,17 @@ if grep 'PARTICIPATE="no"' /etc/popularity-contest.conf &>/dev/null; then
   sed -i 's/PARTICIPATE="no"/PARTICIPATE="yes"/' /etc/popularity-contest.conf
 fi
 
-umask 077 # Add configuration for root Vifm too
-mkdir -p /root/.config/vifm &>/dev/null | true
+# Add configuration for root Vifm too
+install -d -m 700 /root/.config/vifm
 cp /etc/skel/.config/vifm/vifmrc /root/.config/vifm
+
+# Add configuration for root MC too
+install -d -m 700 /root/.config/mc
+cp /etc/skel/.config/mc/* /root/.config/mc
+
+# Delete unattractive default color schemes.
+# Look at these ~/.local/share/xfce4/terminal/colorschemes/
+[ -d /usr/share/xfce4/terminal/colorschemes/ ] && \
+rm /usr/share/xfce4/terminal/colorschemes/* &>/dev/null
 
 exit 0
