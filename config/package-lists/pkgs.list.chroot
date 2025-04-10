@@ -4,13 +4,6 @@ spice-vdagent
 
 # Bootloader
 grub-efi-amd64
-grub-efi-amd64-bin
-grub-efi-amd64-signed
-shim-helpers-amd64-signed
-shim-signed-common
-shim-unsigned
-shim-signed
-mokutil
 
 # Text Editors and Terminal Tools
 mc
@@ -49,12 +42,8 @@ popularity-contest
 tig
 git
 
-# Fonts
-font-manager
-fonts-glasstty
-fonts-ibm-plex
-fonts-hack
-fonts-unifont
+# Terminus Fonts
+fonts-terminus
 xfonts-terminus
 
 # Virtualization
@@ -68,11 +57,6 @@ gcc-doc
 linux-doc
 manpages-posix
 manpages-posix-dev
-
-# Localization
-manpages-ru
-manpages-ru-dev
-thunderbird-l10n-ru
 
 # Fun
 oneko
@@ -101,6 +85,7 @@ whois
 
 # Graphic and Multimedia Applications
 audacious
+font-manager
 telegram-desktop
 gnome-screensaver
 simplescreenrecorder
