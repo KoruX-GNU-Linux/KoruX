@@ -1,0 +1,156 @@
+Topics:
+* live-build (lb) general theory
+* live-build (lb) configuration
+* Project structure
+* How images are built in Debian
+
+Documentation:
+https://live-team.pages.debian.net/live-manual/html/live-manual/index.en.html
+
+
+--- live-build (lb) general theory
+`live-build` is a tool used for creating Live images in Debian.
+
+A Live image is a version of the operating system that loads directly from a
+medium (such as a USB flash drive or DVD) without the need for installation on a
+hard disk. This allows users to test the system, perform recovery or
+diagnostics, and use it as a portable operating system. Live images are useful
+for demonstrations and testing because changes to the system are not saved after
+rebooting, unless special methods are used to save data.
+
+Most Live images, including those created with `live-build`, provide the option
+to install the operating system onto a hard disk.
+
+When you boot from a Live image, you are usually offered an "Install" option,
+which launches the installer. This allows you to test the operating system
+without making changes to your current system, and then, if it suits you,
+install it on your computer. The installation process from a Live image is
+usually very similar to the standard installation process for the distribution.
+
+
+--- live-build (lb) configuration
+$ /usr/bin/lb config \
+  --distribution bookworm \
+  --debian-installer live \
+  --debian-installer-distribution bookworm \
+  --archive-areas "main contrib non-free non-free-firmware" \
+  --debootstrap-options "--variant=minbase"
+
+This command sets up the environment for creating a Debian live image using the
+`live-build` tool. A brief breakdown:
+
+--distribution bookworm: Specifies that the target is the Debian version with
+the codename bookworm.
+
+--debian-installer live: Includes the Debian installer in the live image.
+
+--debian-installer-distribution bookworm: Indicates that the installer should
+use the bookworm distribution.
+
+--archive-areas "main contrib non-free non-free-firmware": Defines which package
+archive sections will be included (main, contrib, non-free, and non-free
+firmware) in `/etc/apt/sources.list`.
+
+--debootstrap-options "--variant=minbase": Uses debootstrap to create a minimal
+base system.
+
+
+--- Project structure
+After starting the configuration, the project will contain the following files.
+Breakdown:
+
+Temporary files and directories (logs, intermediate results, etc.) necessary for
+building the image:
+- (d) .build
+
+Contains automatically generated configuration files. These files, such as
+`auto/config`, can be used to re-execute the `live-build` configuration with the
+same parameters without having to enter them manually each time:
+- (d) auto
+
+This directory is intended for storing custom scripts that can be executed at
+various points in the build process:
+- (d) local/bin
+
+Used for storing configuration files and settings that determine how the live
+image (Live CD/USB) will be built using `lb`:
+- (d) config
+
+Configuration for APT, such as preference files, package sources, APT
+priorities, etc.:
+- (d) apt
+
+Personal repositories, mirrors, or just sets of deb-packages that can be used
+without accessing external repositories:
+- (d) archives
+
+Configurations for bootloaders, such as GRUB:
+- (d) bootloaders
+
+Configuration of the Debian installer if it is included in the image:
+- (d) debian-installer
+
+Scripts that are executed at various stages of the build process:
+- (d) hooks
+
+Hooks in this directory are executed in the live system, that is, after the
+system has booted in live mode. This can be useful for configurations that
+should only be applied in live mode and are not required in the installed
+system.
+  - (d) live
+
+Hooks in this directory are executed during the image build, most often in the
+chroot environment. This means they affect the system that will be packaged into
+the image, and their changes will be present both in the live system and in the
+installed system if the image is used for installation.
+  - (d) normal
+
+Sequence of hook execution:
+You can use numerical prefixes in the filenames of hooks to specify the order in
+which they are executed. For example, `0010-setup.hook.chroot`,
+`0020-install-packages.hook.chroot`, etc. If multiple hooks have the same
+numerical prefix, they will be executed in alphabetical order of their names.
+
+Additional files to be included in the image. Divided into subcategories:
+- (d) includes
+
+Lists of packages to be installed in the image. For example, `live.list.chroot`
+contains packages for the live system:
+- (d) package-lists
+
+Directory for adding local deb packages that need to be installed:
+- (d) packages
+
+Preseed files for automatic configuration of the Debian installer:
+- (d) preseed
+
+Settings and files for the root filesystem:
+- (d) rootfs
+
+Settings related to the final binary image, such as bootloader parameters:
+- (f) binary
+
+Parameters and scripts used in the initial stage of creating the base system:
+- (f) bootstrap
+
+Settings and scripts applied in the chroot environment during the build:
+- (f) chroot
+
+General settings for all stages of the build:
+- (f) common
+
+Source configuration files for creating the source code of the image:
+- (f) source
+
+
+--- How images are built in Debian
+For example, the `debian-live-12.9.0-amd64-xfce.iso` image from
+https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
+
+It is evident that the author of the build uses the script `rebuild.sh` from
+https://salsa.debian.org/live-team/live-build
+
+$ git clone https://salsa.debian.org/live-team/live-build
+$ cd test
+$ ./rebuild.sh --configuration xfce --debian-version bookworm
+The ISO image build will begin in the current directory.
