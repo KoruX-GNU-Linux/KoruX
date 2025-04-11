@@ -12,3 +12,6 @@ dpkg -l | awk '/^rc/{print $2}' | xargs apt-get purge -y
 
 # ibus depends on dconf-cli
 apt-get install dconf-cli
+
+mandb
+apt-file update
