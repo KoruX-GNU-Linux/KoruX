@@ -21,6 +21,7 @@ blhc
 duck
 quilt
 equivs
+sbuild
 lintian
 apt-file
 aptitude
