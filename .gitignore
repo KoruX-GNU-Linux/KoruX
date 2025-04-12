@@ -10,10 +10,7 @@ binary.modified_timestamps
 .build/
 build.log
 
-sources.list
-
 cache/
-
 local/
 
 chroot/
@@ -34,3 +31,5 @@ source*.tar*
 source*.contents
 source*.packages
 source*.zsync
+
+sources.list
