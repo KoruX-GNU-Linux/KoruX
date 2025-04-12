@@ -2,8 +2,18 @@
 
 set -e
 
-apt-get purge -y imagemagick* mlterm* mozc* anthy* im-config xiterm+thai \
-goldendict quodlibet exfalso ibus
+apt-get purge -y imagemagick* mlterm* xiterm+thai mozc* anthy* \
+goldendict quodlibet exfalso im-config ibus mythes-* myspell-* \
+hyphen-* hunspell hunspell-* aspell aspell-* \
+libreoffice-l10n-* firefox-esr-l10n-*
+
+dpkg --get-selections | grep '^manpages-' | \
+grep -vE 'manpages-dev|manpages-posix|manpages-posix-dev' | awk '{print $1}' | \
+xargs apt-get purge -y
+
+dpkg --get-selections | grep '^task-' | \
+grep -vE 'task-desktop|task-laptop|task-xfce-desktop' | awk '{print $1}' | \
+xargs apt-get purge -y
 
 apt-get autoremove -y
 apt-get autoclean
@@ -13,5 +23,5 @@ dpkg -l | awk '/^rc/{print $2}' | xargs apt-get purge -y
 # ibus depends on dconf-cli
 apt-get install dconf-cli
 
-mandb
 apt-file update
+mandb
