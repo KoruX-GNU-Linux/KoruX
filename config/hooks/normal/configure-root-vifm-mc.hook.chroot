@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+# Add configuration for root Vifm too
+install -d -m 700 /root/.config/vifm
+cp /etc/skel/.config/vifm/vifmrc /root/.config/vifm
+
+# Add configuration for root MC too
+install -d -m 700 /root/.config/mc
+cp /etc/skel/.config/mc/* /root/.config/mc
