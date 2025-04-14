@@ -41,6 +41,7 @@ alias d='cd ~/Downloads'
 alias lb='cd ~/.local/bin' # sorry live-build (lb)
 alias gp='cd /var/cache/pbuilder'
 alias tcd='cd $(mktemp -d)' # temporary directory for experiments
+alias xpx='cd ~/.config/xfce4/xfconf/xfce-perchannel-xml'
 
 # edit
 if [ -n "$EDITOR" ]; then
@@ -58,7 +59,6 @@ alias sdn='sudo shutdown -h now'
 # misc
 alias pip='pip3'
 alias python='python3'
-
 alias nb='newsboat'
 alias rmf='shred -uzn 4' # secure remove file
 alias cc='xsel -p -c; xsel -b -c' # clear primary/clipboard selections
