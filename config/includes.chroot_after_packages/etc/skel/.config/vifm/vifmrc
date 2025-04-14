@@ -510,6 +510,7 @@ nnoremap gg :cd ~/git<cr>
 nnoremap gs :cd ~/sources<cr>
 nnoremap gd :cd ~/Downloads<cr>
 nnoremap gl :cd ~/.local/bin<cr>
+nnoremap gx :cd ~/.config/xfce4/xfconf/xfce-perchannel-xml<cr>
 nnoremap gp :cd /var/cache/pbuilder<cr>
 nnoremap mv :move<cr>
 nnoremap md :mkdir<space>

@@ -39,9 +39,10 @@ alias g='cd ~/git'
 alias s='cd ~/sources'
 alias d='cd ~/Downloads'
 alias lb='cd ~/.local/bin' # sorry live-build (lb)
+alias gx='cd ~/.config/xfce4/xfconf/xfce-perchannel-xml'
+
 alias gp='cd /var/cache/pbuilder'
 alias tcd='cd $(mktemp -d)' # temporary directory for experiments
-alias xpx='cd ~/.config/xfce4/xfconf/xfce-perchannel-xml'
 
 # edit
 if [ -n "$EDITOR" ]; then
