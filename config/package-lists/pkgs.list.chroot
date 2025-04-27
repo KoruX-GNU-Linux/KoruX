@@ -46,7 +46,12 @@ git
 # Themes and Fonts
 arc-theme
 tango-icon-theme
+breeze-gtk-theme
 gnome-themes-extra
+darkblood-gtk-theme
+darkfire-gtk-theme
+darkcold-gtk-theme
+darkmint-gtk-theme
 fonts-terminus
 xfonts-terminus
 
