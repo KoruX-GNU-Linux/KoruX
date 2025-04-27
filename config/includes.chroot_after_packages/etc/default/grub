@@ -7,17 +7,7 @@ GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo KoruX`
 GRUB_CMDLINE_LINUX_DEFAULT="quiet net.ifnames=0 biosdevname=0"
-
-# Print the current default color values for TTY using the command:
-# $ cat /sys/module/vt/parameters/default_{red,grn,blu} > custom.conf
-# Modify these values as needed and use them in the GRUB_CMDLINE_LINUX
-# to set custom TTY colors at boot, also you can use `setvtrgb`:
-# $ setvtrgb custom.conf
-VT_DEFAULT_RED="vt.default_red=0,170,0,170,0,170,0,170,85,255,85,255,85,255,85,255"
-VT_DEFAULT_GRN="vt.default_grn=0,0,170,85,0,0,170,170,85,85,255,255,85,85,255,255"
-VT_DEFAULT_BLU="vt.default_blu=43,0,0,0,170,170,170,170,85,85,85,85,255,255,255,255"
-
-GRUB_CMDLINE_LINUX="$VT_DEFAULT_RED $VT_DEFAULT_GRN $VT_DEFAULT_BLU"
+GRUB_CMDLINE_LINUX=""
 
 # If your computer has multiple operating systems installed, then you
 # probably want to run os-prober. However, if your computer is a host
