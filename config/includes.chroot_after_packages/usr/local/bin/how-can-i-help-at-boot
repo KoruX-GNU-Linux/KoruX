@@ -1,0 +1,9 @@
+#!/bin/sh
+
+main_user=$(getent passwd 1000 | cut -d ':' -f1)
+home_dir="/home/$main_user"
+
+if [ -d "$home_dir" ]; then
+	sudo -u "$main_user" how-can-i-help -o > "$home_dir/how-can-i-help"
+	sudo -u "$main_user" how-can-i-help -o -s newcomer > "$home_dir/how-can-i-help-newcomer"
+fi

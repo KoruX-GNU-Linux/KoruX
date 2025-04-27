@@ -1,0 +1,11 @@
+[Unit]
+Description=Save 'how-can-i-help' output to user home at boot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/how-can-i-help-at-boot
+
+[Install]
+WantedBy=multi-user.target

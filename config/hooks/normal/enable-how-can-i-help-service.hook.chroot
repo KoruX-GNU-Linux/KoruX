@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+# Service runs a script creating files in the home directory at system startup
+# Files contain output from 'how-can-i-help' — useful for assisting Debian
+
+systemctl daemon-reload
+systemctl enable how-can-i-help.service
+systemctl start how-can-i-help.service
