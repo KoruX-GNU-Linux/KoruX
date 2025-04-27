@@ -30,8 +30,10 @@ flare              # https://blends.debian.org/games/tasks/rpg
 xonotic            # https://xonotic.org/ (not in Debian)
 openarena          # https://blends.debian.org/games/tasks/fps
 # ------------------------------------------------------------------
-# Doom 3
+# Doom
 # ------------------------------------------------------------------
+freedm             # https://blends.debian.org/games/tasks/fps
+freedoom           # https://blends.debian.org/games/tasks/fps
 rbdoom3bfg         # https://blends.debian.org/games/tasks/fps
 # ------------------------------------------------------------------
 # Arcade, Puzzle, etc
