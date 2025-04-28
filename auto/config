@@ -18,6 +18,3 @@ lb config noauto \
 	--iso-publisher "KoruX GNU/Linux" \
 	--iso-volume "KoruX 0.01 Xfce amd64" \
 	"${@}"
-
-cp /usr/share/doc/live-build/examples/hooks/reproducible/* config/hooks/normal
-rm -f config/hooks/normal/README
