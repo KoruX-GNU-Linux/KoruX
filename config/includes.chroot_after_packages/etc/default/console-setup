@@ -8,7 +8,7 @@ CHARMAP="UTF-8"
 CODESET="CyrSlav"
 
 FONTSIZE="10x20"
-FONTFACE="Terminus"
+FONTFACE="TerminusBold"
 
 VIDEOMODE=
 
