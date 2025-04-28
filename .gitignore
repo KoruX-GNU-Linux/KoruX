@@ -22,7 +22,6 @@ config/common
 config/source
 config/control
 config/bootstrap
-config/hooks/live
 
 source/
 source*.iso
