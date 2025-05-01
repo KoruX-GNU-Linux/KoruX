@@ -7,7 +7,6 @@ lb config noauto \
 	--security "false" \
 	--architecture "amd64" \
 	--cache-packages "false" \
-	--debian-installer "live" \
 	--distribution "bookworm" \
 	--debian-installer-distribution "bookworm" \
 	--mirror-binary "http://deb.debian.org/debian/" \
