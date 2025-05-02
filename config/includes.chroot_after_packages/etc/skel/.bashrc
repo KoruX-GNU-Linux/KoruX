@@ -135,5 +135,3 @@ man()
     LESS_TERMCAP_us=$'\e[0;4;32m' \
     command man "$@"
 }
-
-figlet KoruX
