@@ -56,8 +56,3 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
                 fi
         }
 fi
-
-# set 077 secure umask for the users
-# files: 600 (rw-------)
-# directories: 700 (rwx------)
-umask 077

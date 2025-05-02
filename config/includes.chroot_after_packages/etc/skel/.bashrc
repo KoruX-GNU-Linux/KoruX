@@ -135,3 +135,8 @@ man()
     LESS_TERMCAP_us=$'\e[0;4;32m' \
     command man "$@"
 }
+
+# set a secure umask to 077
+# files: 600 (rw-------)
+# directories: 700 (rwx------)
+umask 077
