@@ -5,4 +5,3 @@ set -e
 # Set missing bits
 chmod 755 /etc/rc.local
 chmod 755 /usr/share/fonts/truetype/cordata/
-chmod 644 /usr/share/fonts/truetype/cordata/*
