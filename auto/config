@@ -8,7 +8,6 @@ lb config noauto \
 	--architecture "amd64" \
 	--cache-packages "false" \
 	--distribution "bookworm" \
-	--debian-installer-distribution "bookworm" \
 	--mirror-binary "http://deb.debian.org/debian/" \
 	--mirror-bootstrap "http://deb.debian.org/debian/" \
 	--archive-areas "main contrib non-free non-free-firmware" \
