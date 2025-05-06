@@ -23,6 +23,7 @@ quilt
 equivs
 sbuild
 lintian
+lintian-brush
 apt-file
 aptitude
 piuparts
