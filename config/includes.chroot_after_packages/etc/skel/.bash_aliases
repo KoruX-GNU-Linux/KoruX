@@ -63,3 +63,20 @@ alias python='python3'
 alias nb='newsboat'
 alias rmf='shred -uzn 4' # secure remove file
 alias cc='xsel -p -c; xsel -b -c' # clear primary/clipboard selections
+
+# packages
+searchpkg()
+{
+    apt-cache search . | awk -v pat="$1" '$1 ~ pat {print $0}' | grep --color=always "$1"
+}
+
+listpkg()
+{
+    dpkg -l | awk -v pat="$1" '$1 == "ii" && $2 ~ pat {print $0}' | grep --color=always "$1"
+}
+
+# games
+alias q1='quake'
+alias q2='quake2'
+alias q3='quake3'
+alias d1='devilutionx --data-dir /opt/game-ports/diablo1/data'

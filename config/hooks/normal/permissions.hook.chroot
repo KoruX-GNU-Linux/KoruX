@@ -3,5 +3,27 @@
 set -e
 
 # Set missing bits
+
 chmod 755 /etc/rc.local
+
 chmod 755 /usr/share/fonts/truetype/cordata/
+
+chmod 755 /opt/game-ports
+
+chmod 777 /opt/game-ports/quake1
+chmod 644 /opt/game-ports/quake1/README.md
+chmod 755 /opt/game-ports/quake1/install.sh
+
+chmod 777 /opt/game-ports/quake2
+chmod 644 /opt/game-ports/quake2/README.md
+chmod 755 /opt/game-ports/quake2/install.sh
+
+chmod 777 /opt/game-ports/quake3
+chmod 755 /opt/game-ports/quake3/misc
+chmod 644 /opt/game-ports/quake3/misc/*
+chmod 644 /opt/game-ports/quake3/README.md
+chmod 755 /opt/game-ports/quake3/install.sh
+
+chmod 777 /opt/game-ports/diablo1
+chmod 755 /opt/game-ports/diablo1/install.sh
+chmod 644 /opt/game-ports/diablo1/README.md
