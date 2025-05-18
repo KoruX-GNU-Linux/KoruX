@@ -5,7 +5,12 @@
 # https://blends.debian.org/games/tasks/
 #
 # Thanks to the fallows from Debian Games Team
-# <pkg-games-devel@lists.alioth.debian.org> for their work.
+# <debian-devel-games@lists.debian.org> for their work.
+#
+# You can also take a look at /opt/game-ports
+# and read more with:
+# $ game-data-packager --help
+#
 # ------------------------------------------------------------------
 # Penguins
 # ------------------------------------------------------------------
