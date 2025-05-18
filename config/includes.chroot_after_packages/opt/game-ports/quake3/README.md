@@ -30,17 +30,11 @@ $ q3
 
 ## Configuration for 1920x1080
 I've slightly modified the default configuration, changing some settings and
-hotkeys to make it more convenient for playing. If you want to try it:
-
+hotkeys to make it more convenient for playing. If you want to try it, run:
 ```
-# if the directory does not exist create it
-$ mkdir -p ~/.q3a/baseq3
-
-# if you have your own configuration save it
-$ cp ~/.q3a/baseq3/q3config.cfg ~/.q3a/baseq3/backup-q3config.cfg
-
-# copy the new configuration file
-$ cp misc/q3config.cfg ~/.q3a/baseq3
+$ mkdir -p ~/.q3a/{baseq3,unfreeze}
+$ cp misc/q3config.cfg ~/.q3a/baseq3 ~/.q3a/unfreeze ~/.q3a
+$ cp misc/q3key ~/.q3a/baseq3 ~/.q3a
 ```
 
 ## Why should I use ioquake3 instead of id software’s 1.32c?
