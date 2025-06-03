@@ -61,6 +61,8 @@ alias sdn='sudo shutdown -h now'
 alias pip='pip3'
 alias python='python3'
 alias nb='newsboat'
+alias vf='vifm'
+alias v='vim'
 alias rmf='shred -uzn 4' # secure remove file
 alias cc='xsel -p -c; xsel -b -c' # clear primary/clipboard selections
 
@@ -73,6 +75,32 @@ searchpkg()
 listpkg()
 {
     dpkg -l | awk -v pat="$1" '$1 == "ii" && $2 ~ pat {print $0}' | grep --color=always "$1"
+}
+
+aptfilelist()
+{
+    if [ -z "$1" ]; then
+        echo "usage: aptfilelist <package>"
+        return 1
+    fi
+    apt-file list "$1" | less
+}
+
+listfiles()
+{
+    if [ -z "$1" ]; then
+        echo "usage: listfiles <package>"
+        return 1
+    fi
+    dpkg -L "$1" | less
+}
+
+create-orig()
+{
+    if [ -d ./debian ]; then
+        tar --exclude='./.git' --exclude='./.pc' --exclude='./debian' -czvf \
+        "../$(dpkg-parsechangelog -S Source)_$(dpkg-parsechangelog -S Version | cut -d'-' -f1).orig.tar.gz" .
+    fi
 }
 
 # games
