@@ -110,6 +110,7 @@ vlc
 fzf
 fzy
 xsel
+xclip
 ripgrep
 bash-completion
 
