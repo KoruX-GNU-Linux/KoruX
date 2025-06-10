@@ -3,7 +3,7 @@ live-task-xfce
 spice-vdagent
 
 # Bootloader
-grub-efi-amd64
+grub-efi
 
 # Text Editors and Terminal Tools
 mc
@@ -25,6 +25,7 @@ sbuild
 lintian
 lintian-brush
 apt-file
+apt-rdepends
 aptitude
 piuparts
 adequate
