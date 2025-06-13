@@ -1,5 +1,5 @@
 desktop-image: "../splash.png"
-title-color: "#ff6b6b"
+title-color: "#ff4545"
 title-font: "Terminus Bold 20"
 title-text: "Live Boot Menu with GRUB (KoruX 0.01)"
 message-font: "Terminus Bold 20"
