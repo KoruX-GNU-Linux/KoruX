@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+# Set korux-theme for desktop-base
+
+update-alternatives --install /usr/share/desktop-base/active-theme desktop-theme \
+/usr/share/desktop-base/korux-theme 50
+
+update-alternatives --set desktop-theme /usr/share/desktop-base/korux-theme

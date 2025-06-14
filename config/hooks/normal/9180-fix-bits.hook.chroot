@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+# Set missing bits
+
+chmod 755 /etc/rc.local
+
+chmod 755 /usr/share/fonts/truetype/cordata
+
+chmod 755 /opt/game-ports
+find /opt/game-ports -type f -exec chmod 644 {} +
+find /opt/game-ports/* -type d -exec chmod 777 {} +
+find /opt/game-ports -type f -name 'install.sh' -exec chmod 755 {} +
+
+find /usr/share/desktop-base/korux-theme -type d -exec chmod 755 {} +
+find /usr/share/desktop-base/korux-theme -type f -exec chmod 644 {} +

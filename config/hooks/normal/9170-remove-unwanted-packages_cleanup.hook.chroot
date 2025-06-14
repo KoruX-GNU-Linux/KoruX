@@ -2,6 +2,8 @@
 
 set -e
 
+# Free the system from unnecessary packages
+
 apt-get purge -y imagemagick* mlterm* xiterm+thai mozc* anthy* \
 goldendict quodlibet exfalso im-config ibus mythes-* myspell-* \
 hyphen-* hunspell hunspell-* aspell aspell-* \
