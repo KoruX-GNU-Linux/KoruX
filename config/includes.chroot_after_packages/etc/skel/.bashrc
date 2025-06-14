@@ -140,11 +140,3 @@ man()
 # files: 600 (rw-------)
 # directories: 700 (rwx------)
 umask 077
-
-# function for .vimrc trick (vnoremap)
-# (vim visual mode -> ctrl+c -> ~/vbuf)
-# ~/vbuf stores lines yanked from Vim
-vb()
-{
-    [ -s ~/vbuf ] && vim ~/vbuf || echo $?
-}
