@@ -2,7 +2,7 @@
 This script is created to simplify the installation and launch of Quake I with
 enhanced content and the latest updates from **DarkPlaces** port. It downloads
 necessary open and proprietary files and automates the process of preparing the
-game for launch on Linux.
+game for launch on KoruX.
 
 ## Installation
 
@@ -25,7 +25,7 @@ $ q1
 
 ## Where are the game files stored?
 ```
-~/.quakespasm
+~/.quakespasm/
 ```
 
 ## Useful links

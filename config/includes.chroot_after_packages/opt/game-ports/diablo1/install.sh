@@ -13,13 +13,12 @@ fi
 
 umask 022
 
-download_mpq_files()
+download_data_files()
 {
 sshpass -p '1' sftp sftpuser@5.63.158.181 <<EOF
 lcd data
 cd diablo1
-get *.mpq
-get *.MPQ
+get *
 bye
 EOF
 }
@@ -32,36 +31,30 @@ These packages are included in the build image, apparently you removed them.
 EOF
 }
 
-default_installation()
-{
-	for p in devilutionx-data devilutionx; do
-		if ! dpkg -l | awk '{print $2}' | grep "^${p}$" >/dev/null 2>&1; then
-			missing_packages_info
-			exit 1
-		fi
-	done
-
-	mkdir data
-
-	if [ ! -d ~/.ssh ]; then
-		mkdir ~/.ssh
-		chmod 700 ~/.ssh
+for p in devilutionx-data devilutionx; do
+	if ! dpkg -l | awk '{print $2}' | grep "^${p}$" >/dev/null 2>&1; then
+		missing_packages_info
+		exit 1
 	fi
+done
 
-	# know this host (SFTP server with main *.mpq files)
-	sftpip="5.63.158.181"
-	if ! ssh-keygen -F "$sftpip" >/dev/null 2>&1; then
-		ssh-keyscan -H "$sftpip" >> ~/.ssh/known_hosts
-	fi
+mkdir data
 
-	# download all default *.mpq files from my SFTP server
-	download_mpq_files
-	echo "*.mpq files extracted from:" > data/README
-	echo "setup_diablo_1.09_hellfire_v4_(78466).exe" >> data/README
-	chmod 644 data/*
+if [ ! -d ~/.ssh ]; then
+	mkdir ~/.ssh
+	chmod 700 ~/.ssh
+fi
 
-	# delete host
-	ssh-keygen -R "$sftpip" >/dev/null 2>&1
-}
+# know this host (SFTP server with game data files)
+sftpip="5.63.158.181"
+if ! ssh-keygen -F "$sftpip" >/dev/null 2>&1; then
+	ssh-keyscan -H "$sftpip" >> ~/.ssh/known_hosts
+fi
 
-default_installation
+# download game data files from SFTP server
+echo "Data files extracted from:"
+echo "setup_diablo_1.09_hellfire_v4_(78466).exe\n"
+download_data_files
+
+# delete host
+ssh-keygen -R "$sftpip" >/dev/null 2>&1

@@ -2,7 +2,7 @@
 This script is created to simplify the installation and launch of Quake II with
 enhanced content and the latest updates from **Yamagi** port. It downloads
 necessary open and proprietary files and automates the process of preparing the
-game for launch on Linux.
+game for launch on KoruX.
 
 ## Installation
 
@@ -25,7 +25,7 @@ $ q2
 
 ## Where are the game files stored?
 ```
-~/.yq2
+~/.yq2/
 ```
 
 ## Useful links
@@ -33,4 +33,4 @@ $ q2
 ### Project
 - [GitHub](https://github.com/yquake2/yquake2)
 - [Bug Tracker](https://github.com/yquake2/yquake2/issues)
-- [Site](https://www.yamagi.org/quake2/)
+- [Site](https://www.yamagi.org/quake2)

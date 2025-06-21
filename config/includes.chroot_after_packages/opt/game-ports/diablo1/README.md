@@ -2,7 +2,7 @@
 This script is created to simplify the installation and launch of Diablo I with
 enhanced content and the latest updates from **diasurgical (DevilutionX)** port.
 It downloads necessary open and proprietary files and automates the process of
-preparing the game for launch on Linux.
+preparing the game for launch on KoruX.
 
 ## Installation
 
@@ -34,4 +34,4 @@ $ d1
 - [GitHub](https://github.com/diasurgical/DevilutionX)
 - [Wiki](https://github.com/diasurgical/DevilutionX/wiki)
 - [Bug Tracker](https://github.com/diasurgical/DevilutionX/issues)
-- [Site](https://devilutionx.com/)
+- [Site](https://devilutionx.com)

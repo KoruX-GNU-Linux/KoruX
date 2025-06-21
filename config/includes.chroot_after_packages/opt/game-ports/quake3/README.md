@@ -2,7 +2,7 @@
 This script is created to simplify the installation and launch of Quake III
 Arena with enhanced content and the latest updates from **ioquake3** port. It
 downloads necessary open and proprietary files and automates the process of
-preparing the game for launch on Linux.
+preparing the game for launch on KoruX.
 
 ## Installation
 
@@ -63,6 +63,7 @@ in the file ```~/.q3a/baseq3/q3config.cfg```
 - [GitHub](https://github.com/ioquake/ioq3)
 - [Bug Tracker 1](https://github.com/ioquake/ioq3/issues)
 - [Bug Tracker 2](https://bugzilla.icculus.org/describecomponents.cgi?product=ioquake3)
+- [Site](https://ioquake3.org)
 
 ### Where can I find good maps to download?
 - [Maps 1](https://lvlworld.com)
