@@ -118,4 +118,5 @@ wgetf() {
 alias q1='quake'
 alias q2='quake2'
 alias q3='quake3'
+alias h3='vcmiclient'
 alias d1='devilutionx --data-dir /opt/game-ports/diablo1/data'
