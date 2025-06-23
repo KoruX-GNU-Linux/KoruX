@@ -65,6 +65,7 @@ qemu-system
 info
 mandoc
 gcc-doc
+help2man
 linux-doc
 manpages-posix
 manpages-posix-dev
