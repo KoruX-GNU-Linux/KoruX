@@ -14,6 +14,13 @@ vim-gtk3
 unclutter
 unclutter-startup
 
+# Linux Kernel Compilation
+flex
+bison
+libssl-dev
+libelf-dev
+libncurses-dev
+
 # Debian Maintenance
 dput
 cdbs
