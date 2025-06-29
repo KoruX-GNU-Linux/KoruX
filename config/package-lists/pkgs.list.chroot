@@ -20,6 +20,7 @@ bison
 libssl-dev
 libelf-dev
 libncurses-dev
+gcc-12-plugin-dev
 
 # Debian Maintenance
 dput
