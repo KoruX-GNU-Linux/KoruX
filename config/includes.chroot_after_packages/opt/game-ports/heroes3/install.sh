@@ -33,8 +33,10 @@ if ! ssh-keygen -F "$sftpip" >/dev/null 2>&1; then
 fi
 
 # download game data files from SFTP server
+echo
 echo "Data files extracted from:"
-echo "setup_heroes_of_might_and_magic_3_complete_4.0_(28740).exe\n"
+echo "setup_heroes_of_might_and_magic_3_complete_4.0_(28740).exe"
+echo
 download_data_files
 
 # install data package

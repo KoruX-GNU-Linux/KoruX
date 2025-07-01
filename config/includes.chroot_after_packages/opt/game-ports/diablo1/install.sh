@@ -52,8 +52,10 @@ if ! ssh-keygen -F "$sftpip" >/dev/null 2>&1; then
 fi
 
 # download game data files from SFTP server
+echo
 echo "Data files extracted from:"
-echo "setup_diablo_1.09_hellfire_v4_(78466).exe\n"
+echo "setup_diablo_1.09_hellfire_v4_(78466).exe"
+echo
 download_data_files
 
 # delete host
