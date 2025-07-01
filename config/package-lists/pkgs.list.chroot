@@ -147,6 +147,7 @@ systemd-coredump
 python3-pip
 patchutils
 moreutils
+batcat
 dialog
 hwinfo
 indent
