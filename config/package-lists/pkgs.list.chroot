@@ -77,6 +77,7 @@ help2man
 linux-doc
 manpages-posix
 manpages-posix-dev
+debian-reference-en
 
 # Fun
 oneko
@@ -161,6 +162,7 @@ gettext
 neofetch
 
 # Games + Instruments for it
+vcmi
 quake
 quake2
 quake3

@@ -7,7 +7,8 @@ set -e
 apt-get purge -y mlterm* xiterm+thai mozc* anthy* goldendict \
 quodlibet exfalso im-config ibus mythes-* myspell-* \
 hyphen-* hunspell hunspell-* aspell aspell-* \
-libreoffice-l10n-* firefox-esr-l10n-*
+libreoffice-l10n-* firefox-esr-l10n-* \
+debian-reference-es debian-reference-it
 
 dpkg --get-selections | grep '^manpages-' | \
 grep -vE 'manpages-dev|manpages-posix|manpages-posix-dev' | awk '{print $1}' | \
