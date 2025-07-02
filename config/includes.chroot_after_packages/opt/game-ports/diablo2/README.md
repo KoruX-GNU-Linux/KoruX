@@ -22,7 +22,6 @@ $ diablo-2
 ## Where are the game files stored?
 ```
 ~/.local/share/games/diablo-2/
-~/.wine/drive_c/users/$USER/Documents/Diablo II/
 ```
 
 ## Useful links

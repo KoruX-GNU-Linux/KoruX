@@ -23,6 +23,15 @@ bye
 EOF
 }
 
+sudo tee /etc/apt/sources.list.d/sid.list >/dev/null <<EOF
+deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware
+EOF
+
+sudo apt update
+sudo apt install -y play.it
+sudo rm /etc/apt/sources.list.d/sid.list
+sudo apt update
+
 git clone --branch main --depth 1 http://git.vv221.fr/play.it-vv221 play.it-tmp
 cd play.it-tmp/games/
 mkdir data
