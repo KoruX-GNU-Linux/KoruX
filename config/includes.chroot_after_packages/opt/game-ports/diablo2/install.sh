@@ -62,8 +62,13 @@ mv data/global/chars/am/cof/amblxbow.cof data/D2LOD/
 ./play-diablo-2-expansions.sh data/D2LOD/Installer\ Tome.mpq
 mv ./*.deb "$OLDPWD"
 
+# back + clean
 cd -
 rm -rf play.it-tmp
+
+# install Diablo II packages with Wine
+sudo dpkg --add-architecture i386
+sudo apt update
 sudo apt install -y ./*.deb
 sudo rm ./*.deb
 

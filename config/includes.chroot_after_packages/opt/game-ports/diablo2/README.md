@@ -1,9 +1,9 @@
 ## Diablo II
-This script is created to simplify the installation and launch of Diablo II.
-Diablo 2 installed through ./play.it relies on WINE, as we have not found a
-native engine providing a playable experience yet. It downloads necessary open
-and proprietary files and automates the process of preparing the game for launch
-on KoruX.
+This script is created to simplify the installation and launch of Diablo II. It
+downloads necessary open and proprietary files and automates the process of
+preparing the game for launch on KoruX. Diablo II installed through ./play.it
+relies on Wine, as we have not found a native engine providing a playable
+experience yet.
 
 ## Installation
 
@@ -21,8 +21,8 @@ $ diablo-2
 
 ## Where are the game files stored?
 ```
-~/Diablo II/
-~/.wine/drive_c/users/$USER/My Documents/Diablo II/
+~/.local/share/games/diablo-2/
+~/.wine/drive_c/users/$USER/Documents/Diablo II/
 ```
 
 ## Useful links

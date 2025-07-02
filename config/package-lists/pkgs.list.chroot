@@ -160,10 +160,12 @@ tree
 gettext
 neofetch
 
-# Games
+# Games + Instruments for it
 quake
 quake2
 quake3
+icoutils
 innoextract
 game-data-packager
 play.it
+smpq
