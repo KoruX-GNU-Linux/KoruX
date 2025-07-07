@@ -8,6 +8,9 @@ chmod 755 /etc/rc.local
 
 chmod 755 /usr/share/fonts/truetype/cordata
 
+chmod 755 /etc/sudoers.d
+chmod 0440 /etc/sudoers.d/pwfeedback
+
 chmod 755 /opt/game-ports
 find /opt/game-ports -type f -exec chmod 644 {} +
 find /opt/game-ports/* -type d -exec chmod 777 {} +
