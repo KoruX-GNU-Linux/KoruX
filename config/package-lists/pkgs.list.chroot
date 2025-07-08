@@ -135,6 +135,7 @@ dh-make
 autoconf
 automake
 valgrind
+cppcheck
 eatmydata
 shellcheck
 pkg-config
