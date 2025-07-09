@@ -145,7 +145,6 @@ exuberant-ctags
 gobject-introspection
 
 # System Utilities and Administration
-libengine-gost-openssl
 systemd-coredump
 python3-pip
 patchutils
@@ -164,6 +163,10 @@ zip
 tree
 gettext
 neofetch
+
+# Cryptography
+libengine-gost-openssl
+gostsum
 
 # Games + Instruments for it
 vcmi
