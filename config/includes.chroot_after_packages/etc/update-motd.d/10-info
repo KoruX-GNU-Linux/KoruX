@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo
+echo "Kernel: $(uname -srm)"
+
+local_ip=$(ip route get 8.8.8.8 2>/dev/null | grep -oP 'src \K[\d.]+' || true)
+[ -z "$local_ip" ] && local_ip="Unknown"
+echo "Local IP: $local_ip"
+
+public_ip=$(curl -s ifconfig.me)
+[ -z "$public_ip" ] && public_ip="Unknown"
+echo "Public IP: $public_ip"
