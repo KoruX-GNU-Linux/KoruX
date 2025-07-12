@@ -78,6 +78,7 @@ linux-doc
 manpages-posix
 manpages-posix-dev
 debian-reference-en
+debian-history
 
 # Fun
 oneko
