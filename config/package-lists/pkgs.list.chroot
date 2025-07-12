@@ -145,6 +145,12 @@ autotools-dev
 exuberant-ctags
 gobject-introspection
 
+# QA (Bash)
+bats
+bats-file
+bats-assert
+bats-support
+
 # System Utilities and Administration
 systemd-coredump
 python3-pip
