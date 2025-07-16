@@ -5,9 +5,8 @@ set -e
 # Free the system from unnecessary packages
 
 apt-get purge -y mlterm* xiterm+thai mozc* anthy* goldendict \
-quodlibet exfalso im-config ibus mythes-* myspell-* \
-hyphen-* hunspell hunspell-* aspell aspell-* \
-libreoffice-l10n-* firefox-esr-l10n-* \
+quodlibet exfalso im-config ibus mythes* myspell* hyphen* \
+hunspell* aspell* libreoffice-l10n* firefox-esr-l10n* \
 debian-reference-es debian-reference-it
 
 dpkg --get-selections | grep '^manpages-' | \
