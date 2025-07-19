@@ -13,6 +13,8 @@ chmod 755 /etc/update-motd.d/10-info
 chmod 755 /usr/share/fonts/truetype/cordata
 chmod 644 /usr/share/fonts/truetype/cordata/*
 
+chmod 644 /etc/korux_version
+
 chmod 644 /etc/systemd/system/how-can-i-help.service
 
 chmod 755 /opt/game-ports
