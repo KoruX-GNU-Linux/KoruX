@@ -1,0 +1,36 @@
+0.01 (22 Jul 2025)
+
+- Added NOTES in English and Russian
+
+- Created auto/* scripts for cleaning, configuration, and building
+
+- Created the package base for the KoruX distribution in config/package-lists
+
+- Added GRUB configuration for BIOS (grub-pc) with custom font, theme, and
+  splash.png background in config/bootloaders/grub-pc
+
+- config/packages.chroot
+    - Added korux-tests package with KoruX-specific tests
+    - Added patched calamares-settings-korux with KoruX-specific
+    images for the installer
+    - Added custom DevilutionX (Diablo 1) packages (devilutionx and
+    devilutionx-data), which are not yet available in Debian
+    - Added metadata file listing the sources and repositories for
+    the included packages
+
+- Added default live-build hooks for live and normal modes to config/hooks
+
+- Added includes.chroot_after_packages/opt/game-ports with classic game ports:
+  Diablo 1, Diablo 2, Heroes 3, Quake 1-2-3 (make this distribution more fun)
+
+- Added includes.chroot_after_packages/etc with minimal etc configuration
+
+- Added includes.chroot_after_packages/usr with fonts, desktop themes,
+  and local bin scripts; set desktop theme to korux-theme and
+  font to PxPlus Cordata PPC-400
+
+- Added KoruX-specific hooks to config/hooks/normal
+
+- Added user environment configuration files (skel)
+
+- Added GPL-3.0 license
