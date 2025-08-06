@@ -9,14 +9,14 @@ functional yet enjoyable environment for daily work and leisure on any modern
 
 See README.md on https://github.com/KoruX-GNU-Linux for details.
 
-## Project description
+## Description
 
 Languages:</br>
-[ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/README-EN.md)</br>
-[RUSSIAN](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/README-RU.md)
+* [ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/README-EN.md)</br>
+* [RUSSIAN](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/README-RU.md)
 
-## Project notes
+## Notes
 
 Languages:</br>
-[ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/NOTES-EN)</br>
-[RUSSIAN](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/NOTES-RU)
+* [ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/NOTES-EN)</br>
+* [RUSSIAN](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/NOTES-RU)
