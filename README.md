@@ -11,12 +11,12 @@ See README.md on https://github.com/KoruX-GNU-Linux for details.
 
 ## Project description
 
-Languages:
-[ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/README-EN.md)
+Languages:</br>
+[ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/README-EN.md)</br>
 [RUSSIAN](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/README-RU.md)
 
 ## Project notes
 
-Languages:
-[ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/NOTES-EN)
+Languages:</br>
+[ENGLISH](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/NOTES-EN)</br>
 [RUSSIAN](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/NOTES-RU)
