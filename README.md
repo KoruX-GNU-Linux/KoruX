@@ -5,7 +5,8 @@ also appreciate entertainment. It features a preconfigured minimalist XFCE
 desktop, a curated collection of development tools, and built-in classic games.
 With custom themes, specialized tweaks, and easy setup, KoruX offers a
 functional yet enjoyable environment for daily work and leisure on any modern
-64-bit PC.
+64-bit PC. The system uses the standard GRUB bootloader (`grub-pc`) for
+compatibility with traditional BIOS-based computers.
 
 See README.md on https://github.com/KoruX-GNU-Linux for details.
 
