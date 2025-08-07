@@ -15,6 +15,19 @@ Final file: `korux-live-0.01-amd64-xfce.iso`
 Login: `user`</br>
 Password: `live`
 
+# Description of the KoruX environment
+
+- <strong>OS:</strong> ```KoruX```
+- <strong>DE:</strong> ```Xfce4```
+- <strong>DM:</strong> ```LightDM```
+- <strong>WM:</strong> ```Xfwm4```
+- <strong>Shell:</strong> ```Bash```
+- <strong>Browser:</strong> ```Firefox```
+- <strong>File Manager:</strong> ```Thunar```
+- <strong>Terminal Emulator:</strong> ```xfce4-terminal```
+- <strong>Bootloader:</strong> ```GRUB (grub-pc)```
+- <strong>Init System:</strong> ```systemd```
+
 # Features of KoruX
 
 * All essential packages are pre-installed via

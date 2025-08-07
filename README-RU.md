@@ -15,6 +15,19 @@ $ sudo make build
 Логин: `user`</br>
 Пароль: `live`
 
+# Описание среды KoruX
+
+- <strong>ОС:</strong> ```KoruX```
+- <strong>ОРС:</strong> ```Xfce4```
+- <strong>ДМ:</strong> ```LightDM```
+- <strong>ОМ:</strong> ```Xfwm4```
+- <strong>Оболочка:</strong> ```Bash```
+- <strong>Браузер:</strong> ```Firefox```
+- <strong>Файловый Менеджер:</strong> ```Thunar```
+- <strong>Эмулятор Терминала:</strong> ```xfce4-terminal```
+- <strong>Загрузчик:</strong> ```GRUB (grub-pc)```
+- <strong>Система Инициализации:</strong> ```systemd```
+
 # Особенности KoruX
 
 * Все необходимые пакеты предустановлены через
