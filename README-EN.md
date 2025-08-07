@@ -1,14 +1,21 @@
 # KoruX Build
 
-I am using `live-build` version *20250505* in a sid environment.
+I am using `live-build` version **20250505** in a sid environment.
 
+```
 $ sudo apt-get update
 $ sudo apt-get install -y live-build
 $ sudo make build
+```
 
-Final file: korux-live-0.01-amd64-xfce.iso
+Final file: `korux-live-0.01-amd64-xfce.iso`
 
-## Features of KoruX
+# Login in live mode
+
+Login: user
+Password: live
+
+# Features of KoruX
 
 * All essential packages are pre-installed via
   [pkgs.list.chroot](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/config/package-lists/pkgs.list.chroot),
@@ -25,7 +32,9 @@ Final file: korux-live-0.01-amd64-xfce.iso
   unique appearance.
 
 * GRUB bootloader comes with a custom configuration, offering a visually
-  recognizable and user-friendly startup experience.
+  recognizable and user-friendly startup experience. In some places, you might
+  notice a [cat](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/flupi.jpg)
+  — this is a reference to my pet, Flupi, who helped me develop this distribution.
 
 * The default GRUB configuration includes custom kernel parameters for
   improved system behavior and debugging. The options `net.ifnames=0` and
