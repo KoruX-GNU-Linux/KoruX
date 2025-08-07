@@ -76,11 +76,11 @@ Password: `live`
   `deb-clean.sh` for cleaning up package files, tools for creating archives, and
   other useful utilities.
 
-* A highly minimalistic XFCE desktop setup is provided, focused on efficiency and
-  a clean workspace, with no desktop icons and extensive use of keyboard shortcuts
-  for fast navigation. XFCE settings in `~/.config/xfce4` are tailored for
-  streamlined terminal, keyboard, and window management, while numerous
-  customizable terminal color schemes are available in
+* A highly minimalistic XFCE desktop setup with LightDM is provided, focused on
+  efficiency and a clean workspace, with no desktop icons and extensive use of
+  keyboard shortcuts for fast navigation. XFCE settings in `~/.config/xfce4` are
+  tailored for streamlined terminal, keyboard, and window management, while
+  numerous customizable terminal color schemes are available in
   `~/.local/share/xfce4/terminal/colorschemes`. This configuration delivers a
   clutter-free, keyboard-driven environment ideal for users who value speed and
   simplicity.
