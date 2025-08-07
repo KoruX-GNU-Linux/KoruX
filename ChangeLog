@@ -2,7 +2,10 @@
 
 - Added NOTES in English and Russian
 
+- Added README.md, README-EN.md, README-RU.md with description about KoruX
+
 - Created auto/* scripts for cleaning, configuration, and building
+  Added main Makefile: $ sudo make build
 
 - Created the package base for the KoruX distribution in config/package-lists
 
