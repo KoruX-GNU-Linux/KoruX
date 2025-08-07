@@ -1,14 +1,21 @@
 # Сборка KoruX
 
-Я использую `live-build` версии *20250505* в sid окружении.
+Я использую `live-build` версии **20250505** в sid окружении.
 
+```
 $ sudo apt-get update
 $ sudo apt-get install -y live-build
 $ sudo make build
+```
 
-Конечный файл: korux-live-0.01-amd64-xfce.iso
+Конечный файл: `korux-live-0.01-amd64-xfce.iso`
 
-## Особенности KoruX
+# Вход в live режиме
+
+Логин: user
+Пароль: live
+
+# Особенности KoruX
 
 * Все необходимые пакеты предустановлены через
   [pkgs.list.chroot](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/config/package-lists/pkgs.list.chroot),
@@ -26,7 +33,11 @@ $ sudo make build
   индивидуальность системы.
 
 * Загрузчик GRUB поставляется с индивидуальной конфигурацией, обеспечивающей
-  узнаваемый и удобный внешний вид при запуске системы.
+  узнаваемый и удобный внешний вид при запуске системы. В некоторых местах вы
+  можете заметить
+  [кошку](https://github.com/KoruX-GNU-Linux/KoruX/blob/master/flupi.jpg) — это
+  отсылка к моему питомцу Флупи, который помогал мне разрабатывать этот
+  дистрибутив.
 
 * Стандартная конфигурация GRUB включает специальные параметры ядра для улучшения
   работы системы и отладки. Параметры `net.ifnames=0` и `biosdevname=0`
