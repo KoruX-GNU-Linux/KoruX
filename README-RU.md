@@ -12,8 +12,8 @@ $ sudo make build
 
 # Вход в live режиме
 
-Логин: user
-Пароль: live
+Логин: `user`</br>
+Пароль: `live`
 
 # Особенности KoruX
 

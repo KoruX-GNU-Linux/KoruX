@@ -12,8 +12,8 @@ Final file: `korux-live-0.01-amd64-xfce.iso`
 
 # Login in live mode
 
-Login: user
-Password: live
+Login: `user`</br>
+Password: `live`
 
 # Features of KoruX
 
