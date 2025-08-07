@@ -27,6 +27,7 @@ Password: `live`
 - <strong>Terminal Emulator:</strong> ```xfce4-terminal```
 - <strong>Bootloader:</strong> ```GRUB (grub-pc)```
 - <strong>Init System:</strong> ```systemd```
+- <strong>Based on:</strong> ```Debian (Bookworm)```
 
 # Features of KoruX
 

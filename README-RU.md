@@ -27,6 +27,7 @@ $ sudo make build
 - <strong>Эмулятор Терминала:</strong> ```xfce4-terminal```
 - <strong>Загрузчик:</strong> ```GRUB (grub-pc)```
 - <strong>Система Инициализации:</strong> ```systemd```
+- <strong>Основано на:</strong> ```Debian (Bookworm)```
 
 # Особенности KoruX
 
