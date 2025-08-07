@@ -18,9 +18,9 @@ case "$1" in
 		files=(
 			".bash_history"
 			".gdb_history"
-			".lesshst"
 			".tig_history"
 			".viminfo"
+			".lesshst"
 			".wget-hsts"
 			"Downloads/Telegram Desktop/"
 		)
