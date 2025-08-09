@@ -33,7 +33,7 @@ Password: `live`
 
 After installing the KoruX system:
 ```
-$ run-korux-tests
+$ sudo run-korux-tests
 ```
 
 Expected behavior:
