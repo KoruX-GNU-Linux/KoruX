@@ -29,6 +29,18 @@ Password: `live`
 - <strong>Init System:</strong> ```systemd```
 - <strong>Based on:</strong> ```Debian (Bookworm)```
 
+# Testing the KoruX Environment
+
+After installing the KoruX system:
+```
+$ run-korux-tests
+```
+
+Expected behavior:
+```
+All tests passed.
+```
+
 # Features of KoruX
 
 * All essential packages are pre-installed via
@@ -40,7 +52,7 @@ Password: `live`
 * Latest Docker version is pre-installed for easy and secure container
   management.
 
-* The default desktop environment features the custom korux-theme, set via
+* The default desktop environment features the custom `korux-theme`, set via
   `update-alternatives` for a distinctive look and feel. The PxPlus Cordata PPC-400
   font is included in the distribution and used by default, further enhancing the
   unique appearance.
