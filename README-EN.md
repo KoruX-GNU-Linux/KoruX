@@ -29,7 +29,7 @@ Password: `live`
 - <strong>Init System:</strong> ```systemd```
 - <strong>Based on:</strong> ```Debian (Bookworm)```
 
-# Testing the KoruX Environment
+# Testing the KoruX environment
 
 After installing the KoruX system:
 ```
