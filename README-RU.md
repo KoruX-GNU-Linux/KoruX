@@ -33,7 +33,7 @@ $ sudo make build
 
 После установки системы KoruX:
 ```
-$ run-korux-tests
+$ sudo run-korux-tests
 ```
 
 Ожидаемое поведение:
