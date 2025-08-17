@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+# Service runs a script creating files in the home directory at system startup.
+# Files contain output from QA tools such as 'how-can-i-help', useful for helping Debian.
+
+systemctl daemon-reload
+systemctl enable qa.service
+systemctl start qa.service

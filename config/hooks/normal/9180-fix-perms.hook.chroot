@@ -15,7 +15,8 @@ chmod 644 /usr/share/fonts/truetype/cordata/*
 
 chmod 644 /etc/korux_version
 
-chmod 644 /etc/systemd/system/how-can-i-help.service
+chmod 755 /usr/local/bin/qa-at-boot
+chmod 644 /etc/systemd/system/qa.service
 
 chmod 755 /opt/game-ports
 find /opt/game-ports -type f -exec chmod 644 {} +
