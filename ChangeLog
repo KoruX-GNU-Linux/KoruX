@@ -1,9 +1,5 @@
 0.01 (22 Jul 2025)
 
-- Added NOTES in English and Russian
-
-- Added README.md, README-EN.md, README-RU.md with description about KoruX
-
 - Created auto/* scripts for cleaning, configuration, and building
   Added main Makefile: $ sudo make build
 
@@ -13,15 +9,16 @@
   splash.png background in config/bootloaders/grub-pc
 
 - config/packages.chroot
-    - Added korux-tests package with KoruX-specific tests
-    - Added patched calamares-settings-korux with KoruX-specific
-    images for the installer
-    - Added custom DevilutionX (Diablo 1) packages (devilutionx and
-    devilutionx-data), which are not yet available in Debian
-    - Added metadata file listing the sources and repositories for
-    the included packages
+    - Added 'korux-tests' package containing KoruX-specific tests
+    - Added 'korux-reference' package that links to the GitHub Wiki
+    - Added patched 'calamares-settings-korux' with KoruX-specific images
+      for the installer
+    - Added DevilutionX (Diablo 1) packages ('devilutionx' and 'devilutionx-data'),
+      which are not yet available in Debian
+    - Added metadata file listing the sources and repositories for the included
+      packages
 
-- Added default live-build hooks for live and normal modes to config/hooks
+- Added default live-build hooks for 'live' and 'normal' modes to config/hooks
 
 - Added includes.chroot_after_packages/opt/game-ports with classic game ports:
   Diablo 1, Diablo 2, Heroes 3, Quake 1-2-3 (make this distribution more fun)
@@ -36,4 +33,4 @@
 
 - Added user environment configuration files (skel)
 
-- Added GPL-3.0 license
+- Added minimalistic configuration of XFCE and LightDM
