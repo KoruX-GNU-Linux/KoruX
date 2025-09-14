@@ -32,7 +32,7 @@ sudo apt install -y play.it
 sudo rm /etc/apt/sources.list.d/sid.list
 sudo apt update
 
-git clone --branch main --depth 1 http://git.vv221.fr/play.it-vv221 play.it-tmp
+git clone --branch main --depth 1 http://git.vv221.fr/play.it/games-vv221 play.it-tmp
 cd play.it-tmp/games/
 mkdir data
 
@@ -56,7 +56,7 @@ echo
 download_data_files
 
 # generate Diablo II packages
-smpq --extract data/d2data.mpq
+smpq --extract data/d2data.mpq >/dev/null
 mv data/global/sfx/cursor/curindx.wav data/D2/
 mv data/global/sfx/cursor/wavindx.wav data/D2/
 ./play-diablo-2.sh data/D2/Installer\ Tome.mpq
@@ -64,7 +64,7 @@ rm diablo-2-data-shared_*.deb
 mv ./*.deb "$OLDPWD"
 
 # generate Diablo II LoD packages
-smpq --extract data/d2char.mpq
+smpq --extract data/d2char.mpq >/dev/null
 mv data/d2char.mpq data/D2LOD/
 mv data/global/sfx/cursor/curindx.wav data/D2LOD/
 mv data/global/chars/am/cof/amblxbow.cof data/D2LOD/
@@ -72,7 +72,7 @@ mv data/global/chars/am/cof/amblxbow.cof data/D2LOD/
 mv ./*.deb "$OLDPWD"
 
 # back + clean
-cd -
+cd - >/dev/null
 rm -rf play.it-tmp
 
 # install Diablo II packages with Wine
