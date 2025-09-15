@@ -20,8 +20,8 @@
 
 - Added default live-build hooks for 'live' and 'normal' modes to config/hooks
 
-- Added config/includes.chroot_after_packages/opt/game-ports with classic game ports:
-  Diablo 1-2, Heroes 3, Quake 1-2-3 (make this distribution more fun)
+- Added config/includes.chroot_after_packages/opt/game-scripts with installers
+  for classic games: Diablo 1-2, Heroes 3, Quake 1-2-3 (make this distribution more fun)
 
 - Added config/includes.chroot_after_packages/etc with minimal 'etc' configuration
 

@@ -18,10 +18,10 @@ chmod 644 /etc/korux_version
 chmod 755 /usr/local/bin/qa-at-boot
 chmod 644 /etc/systemd/system/qa.service
 
-chmod 755 /opt/game-ports
-find /opt/game-ports -type f -exec chmod 644 {} +
-find /opt/game-ports/* -type d -exec chmod 777 {} +
-find /opt/game-ports -type f -name 'install.sh' -exec chmod 755 {} +
+chmod 755 /opt/game-scripts
+find /opt/game-scripts -type f -exec chmod 644 {} +
+find /opt/game-scripts/* -type d -exec chmod 777 {} +
+find /opt/game-scripts -type f -name 'install.sh' -exec chmod 755 {} +
 
 find /usr/share/desktop-base/korux-theme -type d -exec chmod 755 {} +
 find /usr/share/desktop-base/korux-theme -type f -exec chmod 644 {} +

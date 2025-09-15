@@ -8,7 +8,7 @@
 # Thanks to the fellows from the Debian Games Team
 # <debian-devel-games@lists.debian.org> for their work.
 #
-# You can also take a look at /opt/game-ports and learn more with:
+# You can also take a look at /opt/game-scripts and learn more with:
 # $ game-data-packager --help
 # $ play.it --help
 #
