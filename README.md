@@ -18,7 +18,7 @@ On the Wiki you can see other screenshots of the KoruX distribution.
 - Minimal hardened defaults for Firefox, OpenSSL, PAM, sshd, sudoers, GRUB, and
   sysctl (ASLR)
 - Preinstalled engines and installers for classic games
-  (Diablo 1–2, Heroes 3, Quake 1–2–3) — game data installed via simple scripts
+  (Diablo 1–2, Heroes 3, Quake 1–2–3) — game data can be installed via simple scripts
 
 ## Wiki and Download
 
