@@ -1,4 +1,4 @@
-Debian‑based minimalist desktop OS for developers.
+Debian‑based minimalist desktop OS for developers and maintainers.
 
 <div align="center">
 <img src="https://github.com/KoruX-GNU-Linux/KoruX/blob/master/main-screenshot.png">
