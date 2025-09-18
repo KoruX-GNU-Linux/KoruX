@@ -67,4 +67,4 @@ in the file ```~/.q3a/baseq3/q3config.cfg```
 
 ### Where can I find good maps to download?
 - [Maps 1](https://lvlworld.com)
-- [Maps 2](https://ru.ws.q3df.org/maps)
+- [Maps 2](https://ws.q3df.org/maps/)
