@@ -167,6 +167,7 @@ zip
 tree
 gettext
 neofetch
+linkchecker
 
 # Cryptography
 libengine-gost-openssl
