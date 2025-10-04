@@ -24,4 +24,4 @@ On the Wiki you can see other screenshots of the KoruX distribution.
 
 For details, see the [Wiki](https://github.com/KoruX-GNU-Linux/KoruX/wiki)
 
-Download [ISO](https://disk.yandex.ru/d/YhVBCrixjF_BNg) (amd64)
+Download [ISO](https://disk.yandex.ru/d/N0koTW6N0qwDnQ) (amd64)
