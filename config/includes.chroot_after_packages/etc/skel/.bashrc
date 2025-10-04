@@ -140,3 +140,7 @@ man()
 # files: 600 (rw-------)
 # directories: 700 (rwx------)
 umask 077
+
+# exports
+export LANG=en_US.UTF8
+export LC_ALL=en_US.UTF-8
