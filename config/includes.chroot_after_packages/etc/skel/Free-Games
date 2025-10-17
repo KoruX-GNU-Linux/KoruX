@@ -8,9 +8,17 @@
 # Thanks to the fellows from the Debian Games Team
 # <debian-devel-games@lists.debian.org> for their work.
 #
-# You can also take a look at /opt/game-scripts and learn more with:
+# You can also take a look at `/opt/game-scripts` and learn more with:
 # $ game-data-packager --help
 # $ play.it --help
+#
+# and you can use meta-packages to install genres in bulk, example:
+# $ apt install games-arcade games-rpg
+#
+# see available genres:
+# $ apt-cache depends games-all
+# or:
+# $ apt-cache search '^games-'
 #
 # ------------------------------------------------------------------
 # Penguins
