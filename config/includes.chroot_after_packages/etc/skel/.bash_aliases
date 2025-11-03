@@ -38,7 +38,7 @@ alias c='cd'
 alias g='cd ~/git'
 alias s='cd ~/sources'
 alias d='cd ~/Downloads'
-alias lb='cd ~/.local/bin' # sorry live-build (lb)
+alias gl='cd ~/.local/bin'
 alias gx='cd ~/.config/xfce4/xfconf/xfce-perchannel-xml'
 
 alias gp='cd /var/cache/pbuilder'
