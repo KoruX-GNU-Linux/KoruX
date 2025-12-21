@@ -12,6 +12,7 @@ Final file: `korux-live-0.01-amd64-xfce.iso`
 
 ## Project structure
 
+```
 .
 |
 |-- ChangeLog - project changelog  
@@ -43,3 +44,4 @@ Final file: `korux-live-0.01-amd64-xfce.iso`
    |-- package-lists/ - package lists for live and installed systems  
    |
    `-- packages.chroot/ - local deb packages (tests, game engines, calamares, etc.)
+```
