@@ -9,14 +9,6 @@ quodlibet exfalso im-config ibus mythes* myspell* hyphen* \
 hunspell* aspell* libreoffice-l10n* firefox-esr-l10n* \
 debian-reference-es debian-reference-it
 
-dpkg --get-selections | grep '^manpages-' | \
-grep -vE 'manpages-dev|manpages-posix|manpages-posix-dev' | awk '{print $1}' | \
-xargs apt-get purge -y
-
-dpkg --get-selections | grep '^task-' | \
-grep -vE 'task-desktop|task-laptop|task-xfce-desktop' | awk '{print $1}' | \
-xargs apt-get purge -y
-
 apt-get autoremove -y
 apt-get autoclean
 
